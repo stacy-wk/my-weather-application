@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My Weather Application</title>
+  </head>
+  <body>
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Search for a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <button type="submit" value="Search" class="search-button" id="search-button">Search</button>
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div class="weather-conditions">
+            <div class="place">
+              <h1 class="current-city" id="current-city">Paris, 
+                <span class="country" id="country">France</span>
+              </h1>
+              <h4 id="current-date">Wednesday, 09:00</h4>
+            </div>
+            <div class="weather-info">
+              <p class="current-details"> 
+                <span>Moderate rain</span> <br />
+                <span>
+                  Humidity: 
+                  <strong>87%</strong>
+                </span>
+                <br />
+                <span>
+                  Wind: 
+                  <strong>7.2km/h</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span>
+            <span class="current-temperature-value" id="city-temperature">24</span>
+            <span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/stacy-wk" target="_blank" rel="noopener">Stacy Kamau</a> and is
+          <a href="#" target="_blank" rel="noopener"> openly-sourced on GitHub</a> and
+          <a href="#" target="_blank" rel="noopener">hosted on Vercel</a>
+           .
+        </p>
+      </footer> 
+  </body>
+  <script src="src/app.js"></script>
+</html>
