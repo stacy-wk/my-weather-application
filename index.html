@@ -6,64 +6,65 @@
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
     <title>My Weather Application</title>
   </head>
   <body>
-    <video id="background-video" src="videos/sunny-sky.mp4" autoplay muted loop></video>
-      <header>
-        <form id="search-form">
-          <input
-            type="search"
-            placeholder="Search for a city..."
-            required
-            class="search-input"
-            id="search-input"
-          />
-          <button type="submit" value="Search" class="search-button" id="search-button">Search</button>
-        </form>
-      </header>
-      <main>
-        <div class="current-weather">
-          <div class="weather-conditions">
-            <div class="place">
-              <h1 class="current-city" id="current-city">Paris, 
-                <span class="country" id="country">France</span>
-              </h1>
-              <h4 id="current-date">Wednesday, 09:00</h4>
+    <!img src="image/bg.jpg" alt="bg-image" class="background-image"/>
+    <div class="app-container">
+        <header>
+            <form id="search-form">
+              <input
+                type="search"
+                placeholder="Search for a city..."
+                required
+                class="search-input"
+                id="search-input"
+              />
+              <button type="submit" value="Search" class="search-button" id="search-button">Search</button>
+            </form>
+          </header>
+          <main>
+            <div class="current-weather">
+              <div class="weather-conditions">
+                <div class="place">
+                  <h1 class="current-city" id="current-city">Nairobi</h1>
+                  <h4 id="current-date">Wednesday, 09:00</h4>
+                </div>
+                <div class="weather-info">
+                  <p class="current-details"> 
+                    <p>Weather conditions: 
+                      <strong id="weather-conditions">moderate rain</strong>
+                    </p>
+                    <p>
+                      Humidity: 
+                      <strong id="humidity-value">87%</strong>
+                    </p>
+                    <p>
+                      Wind: 
+                      <strong id="wind-value">7.2km/h</strong>
+                    </p>
+                  </p>
+                </div>
+              </div>
+              <div class="current-temperature">
+                <span class="current-temperature-icon" id="current-temperature-icon"></span>
+                <span class="current-temperature-value" id="city-temperature">22</span>
+                <span class="current-temperature-unit">°C</span>
+              </div>
             </div>
-            <div class="weather-info">
-              <p class="current-details"> 
-                <span>Moderate rain</span> <br />
-                <span>
-                  Humidity: 
-                  <strong>87%</strong>
-                </span>
-                <br />
-                <span>
-                  Wind: 
-                  <strong>7.2km/h</strong>
-                </span>
-              </p>
-            </div>
-          </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span>
-            <span class="current-temperature-value" id="city-temperature">24</span>
-            <span class="current-temperature-unit">°C</span>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <p>
-          This project was coded by
-          <a href="https://github.com/stacy-wk" target="_blank" rel="noopener">Stacy Kamau</a> and is
-          <a href="#" target="_blank" rel="noopener"> openly-sourced on GitHub</a> and
-          <a href="#" target="_blank" rel="noopener">hosted on Vercel</a>
-           .
-        </p>
-      </footer> 
+          </main>
+          <footer>
+            <p>
+              This project was coded by
+              <a href="https://github.com/stacy-wk" target="_blank" rel="noopener">Stacy Kamau</a> and is
+              <a href="#" target="_blank" rel="noopener">openly-sourced on GitHub</a> and
+              <a href="#" target="_blank" rel="noopener">hosted on Vercel</a>
+               .
+            </p>
+          </footer> 
+    </div>
   </body>
   <script src="src/app.js"></script>
 </html>
