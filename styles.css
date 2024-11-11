@@ -87,49 +87,9 @@
     padding-top: 40px;
   }
 
-  /*.forecast-section {
-    width: 60vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-  }*/
-
-  /* .forecast-data {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-  } */
-
-  /* .forecast-day {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-right: 5px; */
-    /* background-color: black; */
-    /* flex-direction: row; */
-    /* justify-content: space-around;  */
-    /* margin: auto; */
-    /* margin-top: 30px; 
-    padding: 5px;  */
-    /* background-color: black;  */
-   /* }
-
-   .forecast-date {
-    display: flex;
-    justify-content: space-between; 
-   } */
-/* 
-  /*.forecast-temperatures {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }*/
-
   .forecast-data {
     display: flex;
     flex-direction: row;
-    /* margin-top: 40px; */
     margin: 30px auto 60px;
     padding: 20px 0;
     background-color: rgba(255, 255, 255, 0.222);
@@ -154,7 +114,6 @@
   
   .forecast-icon {
     font-size: 3rem;
-    /* margin: 0 auto; */
   }
 
   .forecast-temperatures {
