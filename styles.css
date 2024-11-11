@@ -1,10 +1,10 @@
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  color: #FDFEFF ;
-}
+  body {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 300;
+   color: #FDFEFF ;
+  }
 
-.app-container {
+  .app-container {
     margin: 0 auto 0;
     padding: 0 auto 0;
     border-radius: 16px;
@@ -48,7 +48,7 @@ body {
     border-radius: 30px;
   }
 
-main {
+  main {
     display: flex;
    }
 
@@ -62,11 +62,12 @@ main {
 
   .place {
     font-size: 25px;
-    line-height: 48px;
+    line-height: 30px;
   }
 
   .weather-info {
-    font-size: 500;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   #weather-conditions {
@@ -86,12 +87,107 @@ main {
     padding-top: 40px;
   }
 
+  /*.forecast-section {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+  }*/
+
+  /* .forecast-data {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  } */
+
+  /* .forecast-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 5px; */
+    /* background-color: black; */
+    /* flex-direction: row; */
+    /* justify-content: space-around;  */
+    /* margin: auto; */
+    /* margin-top: 30px; 
+    padding: 5px;  */
+    /* background-color: black;  */
+   /* }
+
+   .forecast-date {
+    display: flex;
+    justify-content: space-between; 
+   } */
+/* 
+  /*.forecast-temperatures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }*/
+
+  .forecast-data {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 40px; */
+    margin: 30px auto 60px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.222);
+    border-radius: 30px;
+    width: fit-content;
+  }
+
+  .forecast-day {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px;
+  }
+  
+  .forecast-date {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-icon {
+    font-size: 3rem;
+    /* margin: 0 auto; */
+  }
+
+  .forecast-temperatures {
+    text-align: center;
+    color: #4888bd;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .max-temperature {
+    padding: 0 5px;
+  }
+
+  .min-temperature {
+    padding: 0 5px;
+  }
+
+  hr {
+    width: 80%;
+    color: white;
+    background-color: white;
+    height: 2px;
+    border: none;
+    border-radius: 30px;
+  }
+  
   footer {
     text-align: center;
     color: white;
-    margin: 175px auto 5px;
+    margin: 10px auto 0;
     line-height: 30px;
-    padding: 50px;
+    padding: 5px 50px 5px 50px;
     font-weight: 900;
     font-size: 16px; 
   }
